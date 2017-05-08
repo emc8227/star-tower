@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+   <meta charset="utf-8" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript">
+
+
+
+     
+        $(document).ready(function () {
+            
+             $("#btnTry").click( 
+                function () {
+                   var i=1
+                   var j=1
+                   
+                   for (i=1;i<=5;i++){
+                       $("#report").append("<br>");
+                       for (j=1;j<=i;j++)
+                        $("#report").append("*");
+                        
+                   };
+                    
+                    
+                 
+                }  
+            );
+        });
+            
+            </script>
+    </head>   
+    <body>
+        <button type="button" id="btnTry">Try</button>
+        <div id="report">Report:<br></div>
+    </body>
+</html>
